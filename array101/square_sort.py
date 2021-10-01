@@ -1,11 +1,11 @@
 from typing import List
 
-num = [1, 9, 9, 3, 8, 7, 0]
+nums = [1, 9, 9, 3, 8, 7, 0]
 
 
-def solution(num: List[int]) -> List[int]:
+def solution(nums: List[int]) -> List[int]:
     result = []
-    for i in num:
+    for i in nums:
         result.append(i * i)
 
     print('the new array: ', result)
@@ -18,5 +18,5 @@ def solution(num: List[int]) -> List[int]:
         print('the new array: ', result)
     return result
 
-answer = solution(num)
+answer = solution(nums)
 print("the answer is ", answer)

@@ -1,13 +1,13 @@
 from typing import List
 
-num = [1, 1, 1, 1, 1, 0, 1, 1, 0]
+nums = [1, 1, 1, 1, 1, 0, 1, 1, 0]
 
 
-def solution(num: List[int]) -> int:
+def solution(nums: List[int]) -> int:
     count = 0
     max_count = 0
 
-    for i in num:
+    for i in nums:
         if i == 1:
             count += 1
         else:
@@ -19,5 +19,5 @@ def solution(num: List[int]) -> int:
     return max_count
 
 
-answer = solution(num)
+answer = solution(nums)
 print("The answer is: ", answer)
